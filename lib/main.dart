@@ -12,7 +12,7 @@ class Aplication extends StatelessWidget {
       title: 'Navigation Drawer',
       home: Home(),
       theme: ThemeData(
-        primaryColor: Color(0xFF2F008E),
+        primaryColor: Color(0xFF2196F3),
         accentColor: Color(0xFFFDD303)
       )
     );

@@ -4,6 +4,7 @@ import 'import.dart';
 import 'export.dart';
 import 'profile.dart';
 import 'logout.dart';
+import 'app_1.dart';
 
 class Home extends StatefulWidget {
   HomeState createState() => HomeState();
@@ -18,6 +19,7 @@ class HomeState extends State<Home> {
       case 2: return Export();
       case 3: return Profile();
       case 4: return Logout();
+      case 5: return App_1();
     }
   }
 
@@ -87,6 +89,14 @@ class HomeState extends State<Home> {
               selected: (4 == _selectDrawerItem),
               onTap: () {
                 _onSelectItem(4);
+              },
+            ),
+            ListTile(
+              title: Text('App 1'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (5 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(5);
               },
             ),
           ],
