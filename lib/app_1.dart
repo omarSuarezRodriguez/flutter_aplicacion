@@ -19,7 +19,7 @@ class App_1 extends StatelessWidget {
         ),
         TextFormField(
           controller: miControlador_1,
-          decoration: InputDecoration(labelText: 'Ingrese el primer número', hintStyle: descTextStyle),
+          decoration: InputDecoration(labelText: 'Ingrese el primer número'),
         ),
         TextFormField(
           controller: miControlador_2,
