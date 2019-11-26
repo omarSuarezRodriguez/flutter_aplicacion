@@ -3,8 +3,13 @@ import 'package:flutter/material.dart';
 class App_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final miControlador = TextEditingController();
 
+    //Variables de objetos
+    //O mejor conocidos como controladores
+    final miControlador_1 = TextEditingController();
+    final miControlador_2 = TextEditingController();
+
+    //TODO el codigo
     return ListView(
       padding: EdgeInsets.all(20),
       children: <Widget>[
@@ -13,21 +18,42 @@ class App_1 extends StatelessWidget {
           textAlign: TextAlign.center,
         ),
         TextFormField(
-          controller: miControlador,
-          decoration: InputDecoration(
-            labelText: 'Ingrese el primer número',
-          ),
+          controller: miControlador_1,
+          decoration: InputDecoration(labelText: 'Ingrese el primer número'),
         ),
-        Text(miControlador.text),
+        TextFormField(
+          controller: miControlador_2,
+          decoration: InputDecoration(labelText: 'Ingrese el segundo número'),
+        ),
         RaisedButton(
-          onPressed: (){
-            showMyDialog(context, miControlador.text);
+          child: Text("Calcular"),
+          onPressed: () {
+            eventoClickBoton(context, miControlador_1, miControlador_2);
+//            int num_1 = int.parse(miControlador_1.text);
+//            int num_2 = int.parse(miControlador_2.text);
+//            int resultado = num_1 + num_2;
+//            showMyDialog(context, resultado.toString());
           },
         ),
       ],
     );
   }
 
+
+  //Metodos
+
+  //Metodo 1
+  void eventoClickBoton(
+      BuildContext context,
+      TextEditingController miControlador_1,
+      TextEditingController miControlador_2) {
+    int num_1 = int.parse(miControlador_1.text);
+    int num_2 = int.parse(miControlador_2.text);
+    int resultado = num_1 + num_2;
+    showMyDialog(context, resultado.toString());
+  }
+
+  //Metodo 2
   //Mostrar showDialog
   void showMyDialog(BuildContext context, String texto) {
     showDialog<bool>(
