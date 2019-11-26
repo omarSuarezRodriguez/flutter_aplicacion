@@ -12,17 +12,23 @@ class Home extends StatefulWidget {
 
 class HomeState extends State<Home> {
   int _selectDrawerItem = 0;
+
   _getDrawerItemWidget(int pos) {
-    switch(pos) {
-      case 0: return Import();
-      case 1: return Gallery();
-      case 2: return Export();
-      case 3: return Profile();
-      case 4: return Logout();
-      case 5: return App_1();
+    switch (pos) {
+      case 0:
+        return Import();
+      case 1:
+        return Gallery();
+      case 2:
+        return Export();
+      case 3:
+        return Profile();
+      case 4:
+        return Logout();
+      case 5:
+        return App_1();
     }
   }
-
 
   _onSelectItem(int pos) {
     Navigator.of(context).pop();
@@ -30,8 +36,6 @@ class HomeState extends State<Home> {
       _selectDrawerItem = pos;
     });
   }
-
-
 
   @override
   Widget build(BuildContext context) {

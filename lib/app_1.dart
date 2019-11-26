@@ -6,23 +6,23 @@ class App_1 extends StatelessWidget {
     return new Scaffold(
         appBar: new AppBar(
             title: new Text("Input text"), backgroundColor: Color(0xFF54B5F6)),
-        body: new Container(
-            child: new Center(
-                child: new Column(
+        body: Container(
+            child: Center(
+                child: Column(
           children: <Widget>[
-            new TextField(
+            TextField(
               decoration: new InputDecoration(hintText: "Type in here!"),
             ),
-            new Text("Hola"),
-            new Text("Hola mundo"),
-            new Text("Hola"),
-            new Text("Hola"),
-            new Text("Hola"),
-            new Text("Hola"),
-            new TextField(
+            Text("Hola"),
+            Text("Hola mundo"),
+            Text("Hola"),
+            Text("Hola"),
+            Text("Hola"),
+            Text("Hola"),
+            TextField(
               decoration: new InputDecoration(hintText: "Type in here!"),
             ),
-            new Text("Hola"),
+            Text("Hola"),
           ],
         ))));
   }
