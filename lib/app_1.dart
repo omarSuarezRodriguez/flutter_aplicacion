@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class App_1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     //Variables de objetos
     //O mejor conocidos como controladores
     final miControlador_1 = TextEditingController();
@@ -16,10 +15,11 @@ class App_1 extends StatelessWidget {
         Text(
           "App 1",
           textAlign: TextAlign.center,
+          style: descTextStyle,
         ),
         TextFormField(
           controller: miControlador_1,
-          decoration: InputDecoration(labelText: 'Ingrese el primer número'),
+          decoration: InputDecoration(labelText: 'Ingrese el primer número', hintStyle: descTextStyle),
         ),
         TextFormField(
           controller: miControlador_2,
@@ -38,7 +38,6 @@ class App_1 extends StatelessWidget {
       ],
     );
   }
-
 
   //Metodos
 
@@ -75,6 +74,17 @@ class App_1 extends StatelessWidget {
       },
     );
   }
+
+  //Metodo 3
+  //Estilo de letra
+  final descTextStyle = TextStyle(
+    color: Colors.black,
+    fontWeight: FontWeight.w800,
+    fontFamily: 'Roboto',
+    letterSpacing: 0.5,
+    fontSize: 18,
+    height: 2,
+  );
 }
 
 //Código comentareado:

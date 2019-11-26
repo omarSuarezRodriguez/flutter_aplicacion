@@ -6,7 +6,7 @@ class App_2 extends StatelessWidget {
     //TODO el código
     return ListView(
       children: <Widget>[
-        Text("Prueba",
+        Text("Prueba, App 2",
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 30, color: Colors.blue)),
       ],
