@@ -8,17 +8,28 @@ class App_5 extends StatelessWidget {
 
     //TODO el código
     return ListView(
+      padding: EdgeInsets.all(20),
       children: <Widget>[
 //        Text("Prueba"),
         FlatButton(
-          onPressed: () {},
-          child: Text("App 4"),
+          onPressed: () {
+            showMyDialog(context, ejercicio);
+          },
+          child: Text(
+            "App 5",
+            style:
+                DefaultTextStyle.of(context).style.apply(fontSizeFactor: 2.0),
+          ),
         ),
         RaisedButton(
-          onPressed: (){
+          onPressed: () {
             eventoClickBoton(context);
           },
-          child: Text("Mostrar"),
+          child: Text(
+            "Mostrar",
+            style:
+                DefaultTextStyle.of(context).style.apply(fontSizeFactor: 1.5),
+          ),
         ),
       ],
     );
@@ -29,7 +40,16 @@ class App_5 extends StatelessWidget {
 //Método 1
 //Método evento click botón
   void eventoClickBoton(BuildContext context) {
-    showMyDialog(context, "Pueba");
+//    showMyDialog(context, "Pueba");
+
+    int i = 1;
+    String cadena = "";
+    while (i <= 100) {
+      cadena += i.toString() + " ";
+      i++;
+    }
+    showMyDialog(context, cadena);
+
   } //Fin Método eventoClickBoton
 
 //Método 2

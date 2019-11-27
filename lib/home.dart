@@ -9,6 +9,11 @@ import 'routes/app_2.dart';
 import 'routes/app_3.dart';
 import 'routes/app_4.dart';
 import 'routes/app_5.dart';
+import 'routes/app_6.dart';
+import 'routes/app_7.dart';
+import 'routes/app_8.dart';
+import 'routes/app_9.dart';
+import 'routes/app_10.dart';
 
 class Home extends StatefulWidget {
   HomeState createState() => HomeState();
@@ -39,6 +44,16 @@ class HomeState extends State<Home> {
         return App_4();
       case 9:
         return App_5();
+      case 10:
+        return App_6();
+      case 11:
+        return App_7();
+      case 12:
+        return App_8();
+      case 13:
+        return App_9();
+      case 14:
+        return App_10();
     }
   }
 
@@ -146,6 +161,46 @@ class HomeState extends State<Home> {
               selected: (9 == _selectDrawerItem),
               onTap: () {
                 _onSelectItem(9);
+              },
+            ),
+            ListTile(
+              title: Text('App 6'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (10 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(10);
+              },
+            ),
+            ListTile(
+              title: Text('App 7'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (11 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(11);
+              },
+            ),
+            ListTile(
+              title: Text('App 8'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (12 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(12);
+              },
+            ),
+            ListTile(
+              title: Text('App 9'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (13 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(13);
+              },
+            ),
+            ListTile(
+              title: Text('App 10'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (14 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(14);
               },
             ),
           ],
