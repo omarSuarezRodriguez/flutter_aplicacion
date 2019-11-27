@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'gallery.dart';
-import 'import.dart';
-import 'export.dart';
-import 'profile.dart';
-import 'logout.dart';
-import 'app_1.dart';
-import 'app_2.dart';
+import 'routes/gallery.dart';
+import 'routes/import.dart';
+import 'routes/export.dart';
+import 'routes/profile.dart';
+import 'routes/logout.dart';
+import 'routes/app_1.dart';
+import 'routes/app_2.dart';
+import 'routes/app_3.dart';
+import 'routes/app_4.dart';
+import 'routes/app_5.dart';
 
 class Home extends StatefulWidget {
   HomeState createState() => HomeState();
@@ -30,6 +33,12 @@ class HomeState extends State<Home> {
         return App_1();
       case 6:
         return App_2();
+      case 7:
+        return App_3();
+      case 8:
+        return App_4();
+      case 9:
+        return App_5();
     }
   }
 
@@ -98,6 +107,7 @@ class HomeState extends State<Home> {
                 _onSelectItem(4);
               },
             ),
+            Divider(),
             ListTile(
               title: Text('App 1'),
               leading: Icon(Icons.exit_to_app),
@@ -112,6 +122,30 @@ class HomeState extends State<Home> {
               selected: (6 == _selectDrawerItem),
               onTap: () {
                 _onSelectItem(6);
+              },
+            ),
+            ListTile(
+              title: Text('App 3'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (7 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(7);
+              },
+            ),
+            ListTile(
+              title: Text('App 4'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (8 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(8);
+              },
+            ),
+            ListTile(
+              title: Text('App 5'),
+              leading: Icon(Icons.exit_to_app),
+              selected: (9 == _selectDrawerItem),
+              onTap: () {
+                _onSelectItem(9);
               },
             ),
           ],
