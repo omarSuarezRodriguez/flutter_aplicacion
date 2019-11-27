@@ -59,7 +59,7 @@ class App_3 extends StatelessWidget {
       String mayor = "Número mayor: \n\n" + num_2.toString();
       showMyDialog(context, mayor);
     }
-  }
+  } //Fin método eventoClickBoton
 
 //Metodo 2
 //Mostrar showDialog
