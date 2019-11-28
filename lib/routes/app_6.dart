@@ -33,12 +33,11 @@ class App_6 extends StatelessWidget {
   void eventoClickBoton(BuildContext context) {
     String cadena = "";
 
-    for (int i =1; i<= 100; i++) {
+    for (int i = 1; i <= 100; i++) {
       cadena += i.toString() + " ";
     }
 
     showMyDialog(context, cadena);
-
   } // Fin Método eventoClickBoton
 
 //Método 2
